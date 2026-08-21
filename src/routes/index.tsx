@@ -8,7 +8,7 @@ import { ResumeSection } from "@/components/ResumeSection";
 import { Blogs } from "@/components/Blogs";
 import { Contact } from "@/components/Contact";
 
-const title = "Safouene Ziadi — AI Engineer & Deep Learning Researcher";
+const title = "Safouene Ziadi — AI Engineer";
 const description =
   "Portfolio of Safouene Ziadi: AI engineer focused on deep learning, interpretable ML and agentic AI systems built with PyTorch, LangChain and CrewAI.";
 
