@@ -30,3 +30,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.lock
+*.json
+*.config.ts
+cv.pdf.asset.json
