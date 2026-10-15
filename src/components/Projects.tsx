@@ -24,7 +24,7 @@ export function Projects() {
                     loading="lazy"
                     width={1200}
                     height={800}
-                    className="aspect-[3/2] w-full object-cover grayscale transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="aspect-[3/2] w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-6">

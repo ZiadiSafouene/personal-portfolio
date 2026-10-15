@@ -4,6 +4,8 @@ import projAgents from "@/assets/proj-agents.png";
 import projVit from "@/assets/proj-vit.png";
 import projVGG from "@/assets/proj-vgg.png";
 import projLime from "@/assets/proj-lime.png";
+import projRun from "@/assets/proj-run.png";
+import projJisur from "@/assets/proj-jisur.png";
 
 export type Project = {
   title: string;
@@ -22,9 +24,25 @@ export const projectsData: Project[] = [
     title: "QARAI Agent Guard",
     description:
       "A Python safety toolkit using ML and pattern-based detection to catch prompt injection, jailbreaks and PII leaks in AI agents, with severity-based policies (block, redact, warn, quarantine) and LangChain/CrewAI middleware.",
-    tags: ["AI Safety", "Agentic AI", "LangChain", "Python"],
+    tags: ["AI Safety", "Agentic AI", "LangChain","CrewAI", "Python" ],
     image: projGuard,
     repoUrl: "https://github.com/qarai-labs/qarai-agent-guard/",
+  },
+  {
+    title: "JISUR Agent OBS",
+    description:
+      "jisur-agent-obs is an open-source platform built around a simple vision : Make software completely observable.",
+    tags: ["AI Safety","System Design" ,"Agentic AI", "LangChain", "Observability"],
+    image: projJisur,
+    repoUrl: "https://github.com/Jisur-dev/agent-obs",
+  },
+  {
+    title: "Durable Agent Runtime",
+    description:
+      "Crash-safe, replayable multi-step agent orchestration runtime.Runs are created through an HTTP API and executed by a worker from an append-only MySQL event log. All workflow state is derived by replaying that log, so any worker can resume a run after a crash without repeating committed side effects or LLM calls.",
+    tags: ["AI Safety", "Agentic AI", "LangChain", "Event Sourcing", "MySQL"],
+    image: projRun,
+    repoUrl: "https://github.com/ZiadiSafouene/Durable_Agent_Runtime",
   },
   {
     title: "P-SPINE Architecture",
@@ -169,7 +187,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jul 24, 2026",
     readingTime: "5 min read",
     excerpt:
-      "Why dense embeddings resist human explanation, and how a sparse interpretable objective can preserve semantics while exposing meaningful latent dimensions.",
+      "A practical guide to protecting AI agents from prompt injection and other malicious inputs using Qarai Agent Guard, with policy-based detection and security controls at the middleware layer.",
     url: "https://medium.com/@ziadisafouene/securing-your-ai-agents-with-qarai-agent-guard-a-practical-tutorial-897e4ac9121d",
   },
   {
@@ -177,7 +195,7 @@ export const blogPosts: BlogPost[] = [
     date: "Mar 5, 2026",
     readingTime: "5 min read",
     excerpt:
-      "Lessons from building Agent Guard: why filtering strings is not enough, and how severity-based policies belong in the agent middleware layer.",
+      "Learn how to translate business challenges into well-defined AI problems by identifying real needs, clarifying objectives, evaluating feasibility, and aligning technical solutions with measurable business outcomes.",
     url: "https://medium.com/@ziadisafouene/ai-problem-framing-bridging-the-gap-between-business-needs-and-technical-ai-solutions-0bf4ca25c509/",
   },
   {
@@ -185,7 +203,7 @@ export const blogPosts: BlogPost[] = [
     date: "Jul 26, 2025",
     readingTime: "4 min read",
     excerpt:
-      "A walkthrough of patch embeddings, positional encoding and multi-head attention — implemented line by line in PyTorch, without pretrained components.",
+      "An introduction to Grad-CAM, a visual explanation technique that highlights the image regions influencing a convolutional neural network's predictions and helps make image classification models more interpretable.",
     url: "https://medium.com/@ziadisafouene/grad-cam-in-explainable-ai-c367358b5f5d",
   },
   {
@@ -193,7 +211,7 @@ export const blogPosts: BlogPost[] = [
     date: "Apr 17, 2025",
     readingTime: "4 min read",
     excerpt:
-      "A walkthrough of patch embeddings, positional encoding and multi-head attention — implemented line by line in PyTorch, without pretrained components.",
+      "Explore how a neural network module can reason about relationships between objects or entities, moving beyond isolated feature representations to capture interactions that matter for complex tasks.",
     url: "https://medium.com/@ziadisafouene/a-simple-neural-network-module-for-relational-reasoning-200303a30109",
   },
   {
@@ -201,7 +219,7 @@ export const blogPosts: BlogPost[] = [
     date: "Apr 5, 2025",
     readingTime: "4 min read",
     excerpt:
-      "A walkthrough of patch embeddings, positional encoding and multi-head attention — implemented line by line in PyTorch, without pretrained components.",
+      "Compare content-based and location-based addressing in Neural Turing Machines, examining how memory can be accessed either by matching information or by following positional relationships.",
     url: "https://medium.com/@ziadisafouene/content-based-addressing-vs-location-based-addressing-in-ntms-dbc199bbea27",
   },
   {
@@ -209,7 +227,7 @@ export const blogPosts: BlogPost[] = [
     date: "Mar 4, 2025",
     readingTime: "4 min read",
     excerpt:
-      "A walkthrough of patch embeddings, positional encoding and multi-head attention — implemented line by line in PyTorch, without pretrained components.",
+      "Understand how Pointer Networks use attention to select elements directly from an input sequence, making them useful for structured prediction tasks such as routing, ordering, and combinatorial optimization.",
     url: "https://medium.com/@ziadisafouene/understanding-the-idea-behind-pointer-networks-ab47fa5703ea",
   },
 ];
