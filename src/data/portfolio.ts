@@ -4,7 +4,7 @@ import projAgents from "@/assets/proj-agents.png";
 import projVit from "@/assets/proj-vit.png";
 import projVGG from "@/assets/proj-vgg.png";
 import projLime from "@/assets/proj-lime.png";
-import projRun from "@/assets/proj-run.png";
+import projMult from "@/assets/proj-mult.jpg";
 import projJisur from "@/assets/proj-jisur.png";
 
 export type Project = {
@@ -37,12 +37,12 @@ export const projectsData: Project[] = [
     repoUrl: "https://github.com/Jisur-dev/agent-obs",
   },
   {
-    title: "Durable Agent Runtime",
+    title: "Multiturn Agent Eval",
     description:
-      "Crash-safe, replayable multi-step agent orchestration runtime.Runs are created through an HTTP API and executed by a worker from an append-only MySQL event log. All workflow state is derived by replaying that log, so any worker can resume a run after a crash without repeating committed side effects or LLM calls.",
-    tags: ["AI Safety", "Agentic AI", "LangChain", "Event Sourcing", "MySQL"],
-    image: projRun,
-    repoUrl: "https://github.com/ZiadiSafouene/Durable_Agent_Runtime",
+      "A professional, production-ready framework for evaluating multi-turn conversational AI agents.",
+    tags: ["AI Safety", "Agentic AI", "LangChain", "Agent Evaluation", "MySQL"],
+    image: projMult,
+    repoUrl: "https://github.com/ZiadiSafouene/Multiturn-Agent-Evaluator",
   },
   {
     title: "P-SPINE Architecture",
